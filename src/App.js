@@ -86,7 +86,7 @@ function App() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">SOLVE</Button>
+                <Button href={p.url} size="small">SOLVE</Button>
               </CardActions>
             </Card>
             </Grid>
