@@ -77,7 +77,7 @@ function App() {
                   {p.title}
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
+                  Codechef
                 </Typography>
                 <Typography variant="body2">
                   SUBMISSIONS: {p.submissions}
