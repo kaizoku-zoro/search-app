@@ -19,7 +19,7 @@ function App() {
 
 
   useEffect(() => {
-    axios.post('http://localhost:5000/', { sort: param }).then((res) => {
+    axios.post('https://dsa-search-api.herokuapp.com/', { sort: param }).then((res) => {
       setlist((res.data).slice(0, 11));
     })
       .catch((err) => {
@@ -28,7 +28,7 @@ function App() {
   }, [param])
 
     const handleClick = ()=>{
-      axios.post('http://localhost:5000/search', {query:query,sort: param }).then((res) => {
+      axios.post('https://dsa-search-api.herokuapp.com/search', {query:query,sort: param }).then((res) => {
       setlist((res.data).slice(0, 11));
       setquery('');
     })
